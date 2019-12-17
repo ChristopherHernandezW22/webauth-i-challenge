@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "db:update": "knex migrate:latest",
+    "db:undo": "knex migrate:rollback"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
